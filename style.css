@@ -1,0 +1,35 @@
+/* 전체 HTML, body의 기본 스타일 설정 */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* 스크롤을 숨깁니다 */
+  position: relative; /* 위치를 절대적으로 조정하지 않음 */
+}
+
+/* 시작 버튼 스타일 */
+#startButton {
+  position: absolute; /* 화면에서 절대 위치 지정 */
+  top: 50%; /* 화면의 중앙에 위치 */
+  left: 50%;
+  transform: translate(-50%, -50%); /* 정확히 가운데 정렬 */
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10; /* 버튼이 다른 요소 위에 표시되도록 설정 */
+}
+
+/* 게임 캔버스 */
+#gameCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* 캔버스는 버튼보다 아래에 위치 */
+}
