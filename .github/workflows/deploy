@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - main  # main 브랜치에 푸시 시 작동
+      - main  # main 브랜치에 푸시할 때 작동
 
 jobs:
   deploy:
@@ -17,4 +17,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./Game/GameProject  # 실제 경로 확인
+        publish_dir: ./Game/GameProject
